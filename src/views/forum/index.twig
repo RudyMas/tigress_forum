@@ -1,4 +1,17 @@
 {% extends 'base.twig' %}
+{% block title %}{{ __('Forum') }}{% endblock %}
+{% block breadcrumb %}
+    <div class="row mb-2">
+        <div class="col-md-12">
+            <nav aria-label="breadcrumb" data-bs-theme="{{ WEBSITE.mode }}">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ BASE_URL }}/home"><i class="fa fa-home"></i></a></li>
+                    <li class="breadcrumb-item active">{{ __('Forum') }}</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+{% endblock %}
 {% block content %}
 <div class="container">
     <!-- Header Row -->
@@ -8,3 +21,4 @@
         </div>
     </div>
 </div>
+{% endblock %}
