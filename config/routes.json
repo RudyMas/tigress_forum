@@ -1,0 +1,15 @@
+{
+  "routes": [
+    {
+      "request": "GET",
+      "path": "/forum",
+      "controller": "forum\\ForumController",
+      "method": "index",
+      "level_rights": [
+        100
+      ],
+      "special_rights": "forum",
+      "special_rights_default": []
+   }
+  ]
+}
